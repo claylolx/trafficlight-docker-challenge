@@ -34,8 +34,8 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-app.use(ipfilter(allowed_subnet, { mode: 'allow' }));
-app.use(ipfilter(denied_ip, { mode: 'deny' }));
+// app.use(ipfilter(allowed_subnet, { mode: 'allow' }));
+// app.use(ipfilter(denied_ip, { mode: 'deny' }));
 
 module.exports = app;
 
