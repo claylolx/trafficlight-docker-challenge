@@ -1,17 +1,23 @@
 services:
   red-app:
+    build:
+      context: ./red
     image: trafficlight/red:v1.0
     container_name: red-app
     networks:
       - traffic-light
 
   yellow-app:
+    build:
+      context: ./yellow
     image: trafficlight/yellow:v1.0
     container_name: yellow-app
     networks:
       - traffic-light
 
   green-app:
+    build:
+      context: ./green
     image: trafficlight/green:v1.0
     container_name: green-app
     networks:
